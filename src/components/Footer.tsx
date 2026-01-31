@@ -13,7 +13,7 @@ export const Footer = () => {
       {/* Logo with Link */}
 <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
   <img 
-    src="/public/lll.png" 
+    src="/gallery/lll.png" 
     alt="Odyrra Logo" 
     className="w-16 h-16 object-contain" 
   />

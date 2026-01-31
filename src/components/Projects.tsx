@@ -18,15 +18,15 @@ const CATEGORIES: Category[] = [
 ];
 
 const PROJECTS: Project[] = [
-  { id: 1, title: 'Harvard School', category: 'Podcast', imageUrl: '/public/pd.jpg' },
-  { id: 2, title: '2M', category: 'Pictures', imageUrl: '/public/2m.jpg' },
-  { id: 3, title: 'Auto Hall UX/UI', category: 'APP', imageUrl: '/public/app.png' },
-  { id: 4, title: 'Auto Hall', category: 'Pictures', imageUrl: '/public/ssi.jpg' },
-  { id: 5, title: '2M Production', category: 'BTS', imageUrl: '/public/pp.jpg' },
-  { id: 6, title: 'Agency Redesign', category: 'Websites', imageUrl: '/public/ag.png' },
-  { id: 7, title: 'Ads', category: 'Ads', imageUrl: '/public/shopify.jpg' },
-  { id: 8, title: 'E-commerce Redesign', category: 'Websites', imageUrl: '/public/brutt.png' },
-  { id: 9, title: 'Tissot', category: 'BTS', imageUrl: '/public/tis.jpg' },
+  { id: 1, title: 'Harvard School', category: 'Podcast', imageUrl: '/gallery/pd.jpg' },
+  { id: 2, title: '2M', category: 'Pictures', imageUrl: '/gallery/2m.jpg' },
+  { id: 3, title: 'Auto Hall UX/UI', category: 'APP', imageUrl: '/gallery/app.png' },
+  { id: 4, title: 'Auto Hall', category: 'Pictures', imageUrl: '/gallery/ssi.jpg' },
+  { id: 5, title: '2M Production', category: 'BTS', imageUrl: '/gallery/pp.jpg' },
+  { id: 6, title: 'Agency Redesign', category: 'Websites', imageUrl: '/gallery/ag.png' },
+  { id: 7, title: 'Ads', category: 'Ads', imageUrl: '/gallery/shopify.jpg' },
+  { id: 8, title: 'E-commerce Redesign', category: 'Websites', imageUrl: '/gallery/brutt.png' },
+  { id: 9, title: 'Tissot', category: 'BTS', imageUrl: '/gallery/tis.jpg' },
 ];
 
 // --- COMPONENT SECTION ---

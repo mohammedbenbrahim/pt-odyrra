@@ -59,7 +59,7 @@ export const Navbar = () => {
           >
             {/* 👇 FIXED: Size reduced to w-10 and path fixed (removed /public) */}
             <img 
-              src="/public/lll.png" 
+              src="/gallery/lll.png" 
               alt="Odyrra Logo" 
               className="w-9 h-9 object-contain" 
             />
