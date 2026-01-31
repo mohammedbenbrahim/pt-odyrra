@@ -25,11 +25,13 @@ interface Project {
 const CATEGORIES: Category[] = [
   'All',
   'Reels',
-  'Websites',
-  'APP',
-  'Ads',
   'BTS',
   'Project',
+  'Ads',
+  'Websites',
+ 
+ 
+
 ];
 
 const PROJECTS: Project[] = [
@@ -38,9 +40,9 @@ const PROJECTS: Project[] = [
   { id: 3, title: 'coolers', category: 'Reels', imageUrl: '/gallery/fr.mp4' },
   { id: 4, title: 'Harvard School', category: 'Project', imageUrl: '/gallery/pd.jpg' },
   { id: 5, title: '2M Rachid Show', category: 'Project', imageUrl: '/gallery/ds1.png' },
-  { id: 6, title: 'Auto Hall UX/UI', category: 'APP', imageUrl: '/gallery/app.png' },
-  { id: 7, title: 'Auto Hall', category: 'Project', imageUrl: '/gallery/ssi.jpg' },
-  { id: 8, title: '2M Production', category: 'Project', imageUrl: '/gallery/pp.jpg' },
+  { id: 6, title: 'Auto Hall UX/UI', category: 'Project', imageUrl: '/gallery/app.png' },
+  { id: 7, title: 'Auto Hall', category: 'Websites', imageUrl: '/gallery/ssi.jpg' },
+  { id: 8, title: '2M Production', category: 'BTS', imageUrl: '/gallery/pp.jpg' },
   { id: 9, title: 'Agency Redesign', category: 'Websites', imageUrl: '/gallery/ag.png' },
   { id: 10, title: ' Shopify Ads', category: 'Ads', imageUrl: '/gallery/shopify.jpg' },
   { id: 11, title: 'E-commerce Redesign', category: 'Websites', imageUrl: '/gallery/brutt.png' },
