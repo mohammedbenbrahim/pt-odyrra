@@ -38,7 +38,7 @@ export const Navbar = () => {
       >
         <nav 
           className={`
-            pointer-events-auto w-[90%] md:w-auto min-w-[300px]
+            relative pointer-events-auto w-[90%] md:w-auto min-w-[300px]
             bg-white/80 backdrop-blur-xl backdrop-saturate-150 
             border border-white/20 
             rounded-full pl-4 pr-3 py-2 
@@ -48,27 +48,34 @@ export const Navbar = () => {
           `}
         >
           
-          {/* LOGO */}
+          {/* 1. LEFT: Logo Icon (Text hidden on mobile) */}
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity pl-2"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity pl-2 z-20"
           >
-            {/* 👇 FIXED: Size reduced to w-10 and path fixed (removed /public) */}
             <img 
               src="/gallery/lll.png" 
               alt="Odyrra Logo" 
               className="w-9 h-9 object-contain" 
             />
-            <span className="font-bold text-slate-900 text-lg tracking-tight hidden xs:block">
+            {/* Desktop Text (Hidden on mobile) */}
+            <span className="font-bold text-slate-900 text-lg tracking-tight hidden md:block">
               Odyrra
             </span>
           </a>
 
-          {/* DESKTOP NAV */}
+          {/* 2. CENTER: Mobile Text (Absolutely Centered) */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
+            <span className="font-bold text-slate-900 text-lg tracking-tight">
+              Odyrra
+            </span>
+          </div>
+
+          {/* 3. RIGHT: Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
@@ -92,9 +99,9 @@ export const Navbar = () => {
             </Button>
           </div>
 
-          {/* MOBILE MENU TOGGLE */}
+          {/* 4. RIGHT: Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-slate-900 hover:bg-slate-100 rounded-full transition-colors active:scale-95"
+            className="md:hidden p-2 text-slate-900 hover:bg-slate-100 rounded-full transition-colors active:scale-95 z-20"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
