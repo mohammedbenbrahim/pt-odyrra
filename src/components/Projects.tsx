@@ -12,7 +12,7 @@ type Category =
   | 'Ads'
   | 'Shopify'
   | 'BTS'
-  | 'Podcast';
+  | 'Project';
 
 interface Project {
   id: number;
@@ -25,27 +25,28 @@ interface Project {
 const CATEGORIES: Category[] = [
   'All',
   'Reels',
-  'Pictures',
   'Websites',
   'APP',
   'Ads',
   'BTS',
-  'Podcast',
+  'Project',
 ];
 
 const PROJECTS: Project[] = [
-  { id: 1, title: 'Reel Concept', category: 'Reels', imageUrl: '/gallery/re.mp4' },
-  { id: 2, title: 'Reels', category: 'Reels', imageUrl: '/gallery/r1.mp4' },
-  { id: 3, title: 'Reels', category: 'Reels', imageUrl: '/gallery/re.mp4' },
-  { id: 4, title: 'Harvard School', category: 'Podcast', imageUrl: '/gallery/pd.jpg' },
-  { id: 5, title: '2M Rachid Show', category: 'Pictures', imageUrl: '/gallery/ds1.png' },
+  { id: 1, title: 'WeCare', category: 'Reels', imageUrl: '/gallery/re.mp4' },
+  { id: 2, title: 'Nomade', category: 'Reels', imageUrl: '/gallery/r1.mp4' },
+  { id: 3, title: 'coolers', category: 'Reels', imageUrl: '/gallery/fr.mp4' },
+  { id: 4, title: 'Harvard School', category: 'Project', imageUrl: '/gallery/pd.jpg' },
+  { id: 5, title: '2M Rachid Show', category: 'Project', imageUrl: '/gallery/ds1.png' },
   { id: 6, title: 'Auto Hall UX/UI', category: 'APP', imageUrl: '/gallery/app.png' },
-  { id: 7, title: 'Auto Hall', category: 'Pictures', imageUrl: '/gallery/ssi.jpg' },
-  { id: 8, title: '2M Production', category: 'BTS', imageUrl: '/gallery/pp.jpg' },
+  { id: 7, title: 'Auto Hall', category: 'Project', imageUrl: '/gallery/ssi.jpg' },
+  { id: 8, title: '2M Production', category: 'Project', imageUrl: '/gallery/pp.jpg' },
   { id: 9, title: 'Agency Redesign', category: 'Websites', imageUrl: '/gallery/ag.png' },
-  { id: 10, title: 'Ads', category: 'Ads', imageUrl: '/gallery/shopify.jpg' },
+  { id: 10, title: ' Shopify Ads', category: 'Ads', imageUrl: '/gallery/shopify.jpg' },
   { id: 11, title: 'E-commerce Redesign', category: 'Websites', imageUrl: '/gallery/brutt.png' },
   { id: 12, title: 'Tissot', category: 'BTS', imageUrl: '/gallery/tis.jpg' },
+  { id: 13, title: 'Facebook Manager Ads', category: 'Ads', imageUrl: '/gallery/ad.JPG' },
+
 
 ];
 
